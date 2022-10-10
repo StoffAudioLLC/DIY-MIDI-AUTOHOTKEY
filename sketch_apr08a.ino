@@ -509,8 +509,8 @@ int notifier = 0;
 void setup()
 {
   delay(1000);
-  //Serial.begin(9600);
-  //Serial.println("Serial started");
+  Serial.begin(9600);
+  Serial.println("Serial started");
   delay(3000);
   display.begin(SSD1306_SWITCHCAPVCC, SCREEN_ADDRESS);
   display.display();
@@ -576,8 +576,6 @@ void loop() {
     rx = MidiUSB.read();
     //Serial.println(rx.byte1, HEX);
     if (rx.header != 0) {
-      
-      
       Serial.print("Received: ");
       Serial.print(rx.header, HEX); //cc
       Serial.print("-");

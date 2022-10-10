@@ -13,7 +13,7 @@ global Protools := false
 global h_midiout
 global magloaded := false
 global Zoomnum := 0
-GroupAdd, MyGroup, ahk_exe IndianaWindowsStore-Win64-Shipping.exe
+GroupAdd, MyGroup, ahk_exe IndianaWindowsStore-Win64-Shipping.exe 
 GroupAdd, MyGroup, ahk_exe destiny2.exe
 GroupAdd, MyGroup, ahk_exe r5apex.exe
 GroupAdd, MyGroup, ahk_exe FortniteClient-Win64-Shipping.exe
@@ -29,7 +29,7 @@ GroupAdd, MyGroup, ahk_exe LEGOSTARWARSSKYWALKERSAGA_DX11.exe
 GroupAdd, MyGroup, ahk_exe haloinfinite.exe
 GroupAdd, MyGroup, ahk_exe NMS.exe
 GroupAdd, MyGroup, ahk_exe Prey.exe
-GroupAdd, MyGroup, ahk_exe javaw.exe
+GroupAdd, MyGroup, ahk_exe javaw.exe ;minecraft
 GroupAdd, MyGroup, ahk_exe sniperelite5.exe
 GroupAdd, MyGroup, ahk_exe sniper5_dx12.exe
 GroupAdd, MyGroup, ahk_exe Dishonored2.exe
@@ -46,7 +46,7 @@ Mididothing()
 Checknote()
 settimez()
 SetTimer, Checknote, 300000
-;SetTimer, settimez, 200000
+SetTimer, settimez, 200000
 SetTimer, checkforp, 1000
 return
 /*
